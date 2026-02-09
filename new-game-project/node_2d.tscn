@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://4pqund3nukl7"]
+
+[ext_resource type="PackedScene" uid="uid://dxjh4c8f6sey7" path="res://bird.tscn" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://cnvbfit0n8lh0" path="res://cat face.png" id="1_wtcfe"]
+
+[node name="Node2D" type="Node2D" unique_id=499306896]
+
+[node name="Bird" parent="." unique_id=1499992933 instance=ExtResource("1_0e48y")]
+offset_left = 578.0
+offset_top = 388.0
+offset_right = 697.0
+offset_bottom = 403.12988
+
+[node name="Bird" parent="Bird" unique_id=1102435560 instance=ExtResource("1_0e48y")]
+layout_mode = 0
+offset_left = 15.751099
+offset_top = 119.033325
+offset_right = 134.7511
+offset_bottom = 134.16321
+
+[node name="CatBread" type="Sprite2D" parent="." unique_id=811709823]
+modulate = Color(1, 0.47843137, 0.83137256, 1)
+position = Vector2(270, 328)
+scale = Vector2(0.17783614, 0.17783618)
+texture = ExtResource("1_wtcfe")
+
+[node name="CatBread2" type="Sprite2D" parent="CatBread" unique_id=2014726014]
+modulate = Color(0.7176471, 1, 0.49411765, 1)
+position = Vector2(4532.262, 1439.5273)
+scale = Vector2(1.0503867, 1.0503865)
+texture = ExtResource("1_wtcfe")
+
+[node name="CatBread" type="Sprite2D" parent="CatBread" unique_id=1630197304]
+modulate = Color(1, 0.47843137, 0.83137256, 1)
+position = Vector2(2041.2051, -888.458)
+scale = Vector2(0.44192457, 0.44192463)
+texture = ExtResource("1_wtcfe")
