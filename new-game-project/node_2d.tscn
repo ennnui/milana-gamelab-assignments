@@ -23,16 +23,25 @@ scale = Vector2(0.043273926, 0.043273926)
 texture = ExtResource("3_q6r6c")
 
 [node name="Shell" parent="." unique_id=1717198825 instance=ExtResource("4_kdubu")]
-position = Vector2(138, 178.00002)
+self_modulate = Color(0.43529412, 0.3764706, 1, 1)
+position = Vector2(131, 176)
 
-[node name="Shell2" parent="." unique_id=402111917 instance=ExtResource("4_kdubu")]
-position = Vector2(405, 402)
+[node name="Shell2" parent="Shell" unique_id=1353524586 instance=ExtResource("4_kdubu")]
+position = Vector2(3984.3704, 5290.172)
+scale = Vector2(0.99999994, 0.99999994)
 
-[node name="Shell3" parent="." unique_id=183145981 instance=ExtResource("4_kdubu")]
-position = Vector2(509.99997, 94.00001)
+[node name="Shell3" parent="Shell" unique_id=1329294012 instance=ExtResource("4_kdubu")]
+position = Vector2(11116.059, 11584.808)
+scale = Vector2(0.99999994, 0.99999994)
 
-[node name="Shell4" parent="." unique_id=1283126081 instance=ExtResource("4_kdubu")]
-position = Vector2(724.99994, 587)
+[node name="Shell4" parent="Shell" unique_id=1496124750 instance=ExtResource("4_kdubu")]
+position = Vector2(12187.486, -3649.5498)
+scale = Vector2(0.99999994, 0.99999994)
 
-[node name="Shell5" parent="." unique_id=1224625673 instance=ExtResource("4_kdubu")]
-position = Vector2(1041, 397)
+[node name="Shell5" parent="Shell" unique_id=1105557546 instance=ExtResource("4_kdubu")]
+position = Vector2(29296.84, 11718.735)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="Shell6" parent="Shell" unique_id=782010820 instance=ExtResource("4_kdubu")]
+position = Vector2(19687.477, 6629.4565)
+scale = Vector2(0.99999994, 0.99999994)
