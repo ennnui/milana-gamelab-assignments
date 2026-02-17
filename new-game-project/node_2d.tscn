@@ -1,37 +1,38 @@
 [gd_scene format=3 uid="uid://4pqund3nukl7"]
 
-[ext_resource type="PackedScene" uid="uid://dxjh4c8f6sey7" path="res://bird.tscn" id="1_0e48y"]
-[ext_resource type="Texture2D" uid="uid://cnvbfit0n8lh0" path="res://cat face.png" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://dwqnwpbhtt4s" path="res://sea.jpeg" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://b7ypeod46iect" path="res://ship.png" id="2_0hol4"]
+[ext_resource type="Texture2D" uid="uid://c5i410ihwbcul" path="res://chest.png" id="3_q6r6c"]
+[ext_resource type="PackedScene" uid="uid://bgj1i2uh1vp6f" path="res://shell.tscn" id="4_kdubu"]
 
-[node name="Node2D" type="Node2D" unique_id=499306896]
+[node name="Node2D" type="Node2D" unique_id=1866532940]
 
-[node name="Bird" parent="." unique_id=1499992933 instance=ExtResource("1_0e48y")]
-offset_left = 578.0
-offset_top = 388.0
-offset_right = 697.0
-offset_bottom = 403.12988
-
-[node name="Bird" parent="Bird" unique_id=1102435560 instance=ExtResource("1_0e48y")]
-layout_mode = 0
-offset_left = 15.751099
-offset_top = 119.033325
-offset_right = 134.7511
-offset_bottom = 134.16321
-
-[node name="CatBread" type="Sprite2D" parent="." unique_id=811709823]
-modulate = Color(1, 0.47843137, 0.83137256, 1)
-position = Vector2(270, 328)
-scale = Vector2(0.17783614, 0.17783618)
+[node name="Sea" type="Sprite2D" parent="." unique_id=1407357857]
+position = Vector2(580, 329)
+scale = Vector2(0.24028185, 0.24028182)
 texture = ExtResource("1_wtcfe")
 
-[node name="CatBread2" type="Sprite2D" parent="CatBread" unique_id=2014726014]
-modulate = Color(0.7176471, 1, 0.49411765, 1)
-position = Vector2(4532.262, 1439.5273)
-scale = Vector2(1.0503867, 1.0503865)
-texture = ExtResource("1_wtcfe")
+[node name="Ship" type="Sprite2D" parent="." unique_id=1973306615]
+position = Vector2(931.00006, 127)
+scale = Vector2(0.062857136, 0.062857136)
+texture = ExtResource("2_0hol4")
 
-[node name="CatBread" type="Sprite2D" parent="CatBread" unique_id=1630197304]
-modulate = Color(1, 0.47843137, 0.83137256, 1)
-position = Vector2(2041.2051, -888.458)
-scale = Vector2(0.44192457, 0.44192463)
-texture = ExtResource("1_wtcfe")
+[node name="Chest" type="Sprite2D" parent="." unique_id=643867730]
+position = Vector2(131.375, 562.625)
+scale = Vector2(0.043273926, 0.043273926)
+texture = ExtResource("3_q6r6c")
+
+[node name="Shell" parent="." unique_id=1717198825 instance=ExtResource("4_kdubu")]
+position = Vector2(138, 178.00002)
+
+[node name="Shell2" parent="." unique_id=402111917 instance=ExtResource("4_kdubu")]
+position = Vector2(405, 402)
+
+[node name="Shell3" parent="." unique_id=183145981 instance=ExtResource("4_kdubu")]
+position = Vector2(509.99997, 94.00001)
+
+[node name="Shell4" parent="." unique_id=1283126081 instance=ExtResource("4_kdubu")]
+position = Vector2(724.99994, 587)
+
+[node name="Shell5" parent="." unique_id=1224625673 instance=ExtResource("4_kdubu")]
+position = Vector2(1041, 397)
