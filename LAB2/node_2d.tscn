@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://4pqund3nukl7"]
+
+[ext_resource type="Texture2D" uid="uid://dwqnwpbhtt4s" path="res://sea.jpeg" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://c5i410ihwbcul" path="res://chest.png" id="3_q6r6c"]
+[ext_resource type="PackedScene" uid="uid://ckudr8chj1kgo" path="res://player.tscn" id="4_0hol4"]
+[ext_resource type="PackedScene" uid="uid://bgj1i2uh1vp6f" path="res://shell.tscn" id="4_kdubu"]
+
+[node name="Ship Game" type="Node2D" unique_id=1866532940]
+
+[node name="Sea" type="Sprite2D" parent="." unique_id=1407357857]
+position = Vector2(580, 329)
+scale = Vector2(0.24028185, 0.24028182)
+texture = ExtResource("1_wtcfe")
+
+[node name="Chest" type="Sprite2D" parent="." unique_id=643867730]
+position = Vector2(131.375, 562.625)
+scale = Vector2(0.043273926, 0.043273926)
+texture = ExtResource("3_q6r6c")
+
+[node name="Shell" parent="." unique_id=1717198825 instance=ExtResource("4_kdubu")]
+self_modulate = Color(0.43529412, 0.3764706, 1, 1)
+position = Vector2(120, 155)
+
+[node name="Shell2" parent="Shell" unique_id=1353524586 instance=ExtResource("4_kdubu")]
+position = Vector2(4386.156, 7399.546)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="Shell3" parent="Shell" unique_id=1329294012 instance=ExtResource("4_kdubu")]
+position = Vector2(15334.805, 14363.822)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="Shell4" parent="Shell" unique_id=1496124750 instance=ExtResource("4_kdubu")]
+position = Vector2(11953.111, -3147.3179)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="Shell5" parent="Shell" unique_id=1105557546 instance=ExtResource("4_kdubu")]
+position = Vector2(30368.27, 12589.271)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="Shell6" parent="Shell" unique_id=782010820 instance=ExtResource("4_kdubu")]
+position = Vector2(15970.963, 3649.5493)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="Player" parent="." unique_id=1351930556 instance=ExtResource("4_0hol4")]
+position = Vector2(999, 181.99988)
+scale = Vector2(0.039993294, 0.039993294)

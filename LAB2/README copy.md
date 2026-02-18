@@ -1,0 +1,4 @@
+# milana-gamelab-assignments
+Hi! In Lab 1 I learned how to use the Sprite2D function to make sprites, how to create new scenes, and how to make editable instances of those scenes. A useful shortcut would be figuring out how to lock certain objects in the "layers" so that they aren't moved when working. 
+
+Additionally, I'm having trouble understanding why the property of a sprite is "doubled" when it becomes the child of the sprite with that property. For instance, if I have a pink shell 1 and I turn that into a scene, and I duplicate it into shell 2, and place shell 2 as a child of shell 2, shell 2 becomes significantly pinker (takes on double the attributes of its parent). 
