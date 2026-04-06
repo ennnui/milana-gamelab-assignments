@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bai746r0lttkj"]
+
+[ext_resource type="Texture2D" uid="uid://wgy7vubt4t8h" path="res://Milana Blokhina_0364 copy.png" id="1_a202f"]
+[ext_resource type="Script" uid="uid://bqaykttj8k46c" path="res://character_body_3d.gd" id="2_noarx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_noarx"]
+albedo_texture = ExtResource("1_a202f")
+
+[sub_resource type="SphereMesh" id="SphereMesh_a202f"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_noarx"]
+
+[node name="Node3D" type="Node3D" unique_id=1992237578]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=809054135]
+transform = Transform3D(-0.8660254, -0.41156822, 0.2839219, 0, 0.56784374, 0.8231363, -0.50000006, 0.71285695, -0.49176708, 0, 0, 0)
+light_color = Color(0.5676137, 0.5921564, 0.66078633, 1)
+shadow_enabled = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1177609280]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.4819183, 0, -0.2730713)
+material_override = SubResource("StandardMaterial3D_noarx")
+use_collision = true
+size = Vector3(18.160858, 1, 16.799072)
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=442235997]
+transform = Transform3D(-0.017528335, 0.6433891, -0.76533866, 0.014731495, 0.76553935, 0.6432204, 0.99973786, 9.31549e-10, -0.02289671, -15.203138, 5.4368973, 3.7728586)
+script = ExtResource("2_noarx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=189645596]
+transform = Transform3D(1, -1.781908e-14, 0, -9.313226e-10, 1, -2.9802322e-08, -1.8626451e-09, -2.9823653e-08, 1, 1.1107402, -2.0886059, -4.4446793)
+mesh = SubResource("SphereMesh_a202f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=394142008]
+transform = Transform3D(0.9973313, -0.05592228, -0.046950452, 0.055862047, 0.99843526, -0.0025950372, 0.047022097, -3.4468016e-05, 0.9988944, 1.8402777, -1.9922576, -4.35219)
+shape = SubResource("SphereShape3D_noarx")
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=1857375668]
+transform = Transform3D(0.8612959, -0.32529095, 0.3903272, 0.32842013, 0.94257104, 0.060828328, -0.38769794, 0.075800076, 0.91866463, 1.8901391, -1.891016, -1.6382799)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=279857613]
+transform = Transform3D(0.49292505, 0.554129, -0.6707951, 0.014731497, 0.76553935, 0.6432205, 0.8699471, -0.32694125, 0.3691904, -15.199089, 11.2774725, 5.7000136)
